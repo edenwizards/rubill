@@ -13,7 +13,7 @@ module Rubill
       end
 
       if config.sandbox
-        self.base_uri = "https://api-stage.bill.com/api/v2"
+        self.base_uri = "https://api-sandbox.bill.com/api/v2"
       else
         self.base_uri = "https://api.bill.com/api/v2"
       end
