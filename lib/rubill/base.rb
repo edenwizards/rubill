@@ -31,6 +31,10 @@ module Rubill
     def delete
       self.class.delete(id)
     end
+    
+    def reload
+      self.remote_record = self.class.find(id)
+    end
 
     def self.find(id)
       new(Query.read(remote_class_name, id))
